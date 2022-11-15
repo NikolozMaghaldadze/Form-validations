@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Validations</title>
+  </head>
+  <body>
+    <section class="main-wrapper">
+      <h1 class="main-header">Registration Form</h1>
+      <form action="" id="registration" method="GET">
+        <div>
+          <label for="username" class="label-1">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your username..."
+          />
+          <span class="error-text" id="error_username"></span>
+        </div>
+
+        <div>
+            <label for="email" class="label-1">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter your email..."
+            />
+            <span class="error-text" id="error_email"></span>
+          </div>
+
+        <div>
+          <label for="password" class="label-1">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="enter your password..."
+          />
+          <i class="fa-solid fa-eye showbtn" id="showButton"></i>
+          <span class="error-text" id="error_password"></span>
+        </div>
+
+        <div>
+          <label for="pass2" class="label-1">Re-enter password</label>
+          <input
+            type="password"
+            name="pass2"
+            id="pass2"
+            placeholder="re-enter your password..."
+          />
+          <i class="fa-solid fa-eye showbtn" id="toggleIcon"></i>
+          <span class="error-text" id="error_pass2"></span>
+          
+        </div>
+
+        <div>
+          <input type="radio" value="male" id="male" name="gender" />
+          <label for="male" id="maleLabel">Male</label>
+          <input type="radio" value="female" id="female" name="gender" />
+          <label for="female">Female</label>    
+          <span class="error-text" id="error_gender"></span>
+        </div>
+
+        <div>
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree" id="check">I agree terms and conditions</label>
+          <span class="error-text" id="error_agree"></span>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
